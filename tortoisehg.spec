@@ -1,8 +1,8 @@
 %define debug_package %{nil} 
 
 Name:           tortoisehg
-Version:        1.1.9.1
-Release:        %mkrel 0
+Version:        2.0.2
+Release:        %mkrel 1
 Summary:        Mercurial GUI command line tool hgtk
 Group:          Development/Tools
 License:        GPLv2
@@ -15,7 +15,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 # subpackage has to be arch-specific:
 # BuildArch:    noarch
 
-BuildRequires:  python-devel, gettext, python-sphinx
+BuildRequires:  python-devel, gettext, python-sphinx, python-qt4-devel
 Requires:       python-iniparse, mercurial >= 1.6, gnome-python-gconf
 Requires:       pygtk2, gnome-python-gtkspell
 
@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %defattr(-,root,root,-)
 %doc COPYING.txt doc/build/html/
-%{_bindir}/hgtk
+%{_bindir}/thg
 %{python_sitelib}/tortoisehg/
 %{python_sitelib}/tortoisehg-*.egg-info
 %{_datadir}/pixmaps/tortoisehg/
