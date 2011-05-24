@@ -1,7 +1,7 @@
 %define debug_package %{nil} 
 
 Name:           tortoisehg
-Version:        2.0.2
+Version:        2.0.4
 Release:        %mkrel 1
 Summary:        Mercurial GUI command line tool hgtk
 Group:          Development/Tools
@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
 
-install -m 644 -D contrib/_hgtk $RPM_BUILD_ROOT/%{_datadir}/zsh/site-functions/_hgtk
+#install -m 644 -D contrib/_hgtk $RPM_BUILD_ROOT/%{_datadir}/zsh/site-functions/_hgtk
 
 %find_lang %{name}
 
@@ -79,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 # /usr/share/zsh/site-functions/ is owned by zsh package which we don't want to
 # require. We also don't want to create a sub-package just for this dependency.
 # Instead we just claim ownership of the zsh top folder ...
-%{_datadir}/zsh
+#%{_datadir}/zsh
 
 %files nautilus
 %defattr(-,root,root,-)
