@@ -1,7 +1,7 @@
 %define debug_package %{nil} 
 
 Name:           tortoisehg
-Version:        2.0.4
+Version:        2.1
 Release:        %mkrel 1
 Summary:        Mercurial GUI command line tool hgtk
 Group:          Development/Tools
