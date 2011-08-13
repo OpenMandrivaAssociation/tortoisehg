@@ -1,16 +1,16 @@
 %define debug_package %{nil} 
 
-Name:           tortoisehg
-Version:        2.1
-Release:        %mkrel 1
-Summary:        Mercurial GUI command line tool hgtk
-Group:          Development/Tools
-License:        GPLv2
+Name:		tortoisehg
+Version:	2.1
+Release:	%mkrel 1
+Summary:	Mercurial GUI command line tool hgtk
+Group:		Development/Other
+License:	GPLv2
 # - few files are however under the more permissive GPLv2+
-URL:            http://tortoisehg.bitbucket.org/
-#Source0:        http://bitbucket.org/tortoisehg/targz/downloads/tortoisehg-%{version}.tar.bz2
+URL:		http://tortoisehg.bitbucket.org/
+#Source0:	http://bitbucket.org/tortoisehg/targz/downloads/tortoisehg-%{version}.tar.bz2
 Source0:	http://bitbucket.org/tortoisehg/stable/get/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 # This package _is_ noarch, but that isn't possible because the nautilus
 # subpackage has to be arch-specific:
 # BuildArch:    noarch
@@ -25,7 +25,7 @@ user interface to the Mercurial distributed revision control system.
 
 %package        nautilus
 Summary:        Mercurial GUI plugin to Nautilus file manager 
-Group:          Development/Tools
+Group:          Development/Other
 Requires:       %{name} = %{version}-%{release}, nautilus-python
 
 %description    nautilus
