@@ -1,5 +1,3 @@
-%define debug_package %{nil} 
-
 Name:		tortoisehg
 Version:	2.1.3
 Release:	%mkrel 1
@@ -13,7 +11,7 @@ Source0:	http://bitbucket.org/tortoisehg/stable/get/%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 # This package _is_ noarch, but that isn't possible because the nautilus
 # subpackage has to be arch-specific:
-# BuildArch:    noarch
+BuildArch:	noarch
 
 BuildRequires:  python-devel, gettext, python-sphinx, python-qt4-devel
 Requires:       python-iniparse, mercurial >= 1.6, gnome-python-gconf
