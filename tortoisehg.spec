@@ -1,5 +1,5 @@
 Name:		tortoisehg
-Version:	2.4
+Version:	2.4.1
 Release:	%mkrel 1
 Summary:	Mercurial GUI command line tool hgtk
 Group:		Development/Other
