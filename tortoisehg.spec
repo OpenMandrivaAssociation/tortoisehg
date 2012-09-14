@@ -83,5 +83,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files nautilus
 %defattr(-,root,root,-)
-%{_libdir}/nautilus/extensions-2.0/python/nautilus-thg.py*
-
+#{_libdir}/nautilus/extensions-2.0/python/nautilus-thg.py
+%{_datadir}/nautilus-python/extensions/nautilus-thg.py
