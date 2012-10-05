@@ -1,9 +1,9 @@
 ###
 
 Name:		tortoisehg
-Version:	2.5
-Release:	%mkrel 1
-Summary:	Mercurial GUI command line tool hgtk
+Version:	2.5.1
+Release:	1
+Summary:	Mercurial GUI command line tool
 Group:		Development/Other
 License:	GPLv2
 # - few files are however under the more permissive GPLv2+
@@ -24,7 +24,7 @@ This package contains the hgtk command line tool, which provides a graphical
 user interface to the Mercurial distributed revision control system. 
 
 %package        nautilus
-Summary:        Mercurial GUI plugin to Nautilus file manager 
+Summary:        Mercurial GUI plugin for Nautilus file manager 
 Group:          Development/Other
 Requires:       %{name} = %{version}-%{release}, nautilus-python
 
