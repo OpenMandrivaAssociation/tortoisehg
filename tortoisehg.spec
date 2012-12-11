@@ -1,9 +1,9 @@
 ###
 
 Name:		tortoisehg
-Version:	2.5.1
-Release:	1
-Summary:	Mercurial GUI command line tool
+Version:	2.5
+Release:	%mkrel 1
+Summary:	Mercurial GUI command line tool hgtk
 Group:		Development/Other
 License:	GPLv2
 # - few files are however under the more permissive GPLv2+
@@ -24,7 +24,7 @@ This package contains the hgtk command line tool, which provides a graphical
 user interface to the Mercurial distributed revision control system. 
 
 %package        nautilus
-Summary:        Mercurial GUI plugin for Nautilus file manager 
+Summary:        Mercurial GUI plugin to Nautilus file manager 
 Group:          Development/Other
 Requires:       %{name} = %{version}-%{release}, nautilus-python
 
@@ -85,3 +85,67 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 #{_libdir}/nautilus/extensions-2.0/python/nautilus-thg.py
 %{_datadir}/nautilus-python/extensions/nautilus-thg.py
+
+
+%changelog
+* Fri Sep 14 2012 Sergey Zhemoitel <serg@mandriva.org> 2.5-1mdv2012.0
++ Revision: 816942
+- Update to 2.5
+
+* Thu Aug 02 2012 Sergey Zhemoitel <serg@mandriva.org> 2.4.2-1
++ Revision: 811562
+- Update to 2.4.2
+
+* Wed Jun 13 2012 Sergey Zhemoitel <serg@mandriva.org> 2.4.1-1
++ Revision: 805373
+- update to 2.4.1
+
+* Fri May 11 2012 Sergey Zhemoitel <serg@mandriva.org> 2.4-1
++ Revision: 798366
+- update to 2.4
+
+* Wed Apr 25 2012 Sergey Zhemoitel <serg@mandriva.org> 2.3.2-1
++ Revision: 793300
+- update release to 2.3.2
+
+* Mon Mar 05 2012 Sergey Zhemoitel <serg@mandriva.org> 2.3.1-1
++ Revision: 782188
+- add new version 2.3.1
+
+* Tue Jan 03 2012 Sergey Zhemoitel <serg@mandriva.org> 2.2.2-1
++ Revision: 748902
+- new release 2.2.2
+
+* Sun Dec 11 2011 Sergey Zhemoitel <serg@mandriva.org> 2.2.1-1
++ Revision: 740235
+- add new release 2.2.1
+
+* Mon Nov 07 2011 Sergey Zhemoitel <serg@mandriva.org> 2.2-1
++ Revision: 726450
+- new version 2.2 with mercurial 2.0
+
+* Sun Nov 06 2011 Sergey Zhemoitel <serg@mandriva.org> 2.1.4-2
++ Revision: 723080
+- add new release 2.1.4
+
+* Thu Sep 22 2011 Sergey Zhemoitel <serg@mandriva.org> 2.1.3-2
++ Revision: 700963
++ rebuild (emptylog)
+
+* Mon Aug 29 2011 Sergey Zhemoitel <serg@mandriva.org> 2.1.3-1
++ Revision: 697336
+- new release 2.1.3
+
+* Sun Aug 14 2011 Sergey Zhemoitel <serg@mandriva.org> 2.1.2-1
++ Revision: 694431
+- new release 2.1.2
+
+* Sun Aug 14 2011 Sergey Zhemoitel <serg@mandriva.org> 2.1-1
++ Revision: 694430
+- fix spec
+- new version 2.1.1
+- imported package tortoisehg
+- Update to new release 2.0.4
+- imported package tortoisehg
+- imported package tortoisehg
+
