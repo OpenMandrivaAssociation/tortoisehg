@@ -1,2 +1,5 @@
+removed_sources:
+  tortoisehg-2.5.1.tar.gz: 1823b17e019dc13b3c8df3a7d66990fe91288f99
+  tortoisehg-2.5.tar.gz: 4a7c101e84f1d200aa246f110ae86892e754a404
 sources:
-  "tortoisehg-2.5.tar.gz": 4a7c101e84f1d200aa246f110ae86892e754a404
+  tortoisehg-2.7.2.tar.gz: 6ed5ca29e848ded8c05f5efaa986b4b33f730189
