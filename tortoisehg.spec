@@ -1,6 +1,6 @@
 Name:		tortoisehg
 Version:	2.7.2
-Release:	%mkrel 1
+Release:	2
 Summary:	Mercurial GUI command line tool hgtk
 Group:		Development/Other
 License:	GPLv2
@@ -15,7 +15,7 @@ BuildArch:	noarch
 
 BuildRequires:  python-devel, gettext, python-sphinx, python-qt4-devel
 Requires:       python-iniparse, mercurial >= 2.5.4, gnome-python-gconf
-Requires:       pygtk2, gnome-python-gtkspell, python-qt4-qscintilla
+Requires:       pygtk2, python-qt4-qscintilla
 
 %description
 This package contains the hgtk command line tool, which provides a graphical
