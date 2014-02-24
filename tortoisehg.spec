@@ -1,6 +1,6 @@
 Name:		tortoisehg
-Version:	2.7.2
-Release:	2
+Version:	2.10
+Release:	%mkrel 1
 Summary:	Mercurial GUI command line tool hgtk
 Group:		Development/Other
 License:	GPLv2
@@ -14,8 +14,8 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:	noarch
 
 BuildRequires:  python-devel, gettext, python-sphinx, python-qt4-devel
-Requires:       python-iniparse, mercurial >= 2.5.4, gnome-python-gconf
-Requires:       pygtk2, python-qt4-qscintilla
+Requires:       python-iniparse, mercurial >= 2.8, gnome-python-gconf
+Requires:       pygtk2, gnome-python-gtkspell, python-qt4-qscintilla
 
 %description
 This package contains the hgtk command line tool, which provides a graphical
@@ -54,8 +54,6 @@ EOT
 rm doc/build/html/.buildinfo
 
 %install
-rm -rf $RPM_BUILD_ROOT
-
 %{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
 
 #install -m 644 -D contrib/_hgtk $RPM_BUILD_ROOT/%{_datadir}/zsh/site-functions/_hgtk
@@ -63,11 +61,8 @@ rm -rf $RPM_BUILD_ROOT
 %find_lang %{name}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
-
-%defattr(-,root,root,-)
 %doc COPYING.txt doc/build/html/
 %{_bindir}/thg
 %{python_sitelib}/tortoisehg/
@@ -80,6 +75,5 @@ rm -rf $RPM_BUILD_ROOT
 #%{_datadir}/zsh
 
 %files nautilus
-%defattr(-,root,root,-)
 #{_libdir}/nautilus/extensions-2.0/python/nautilus-thg.py
 %{_datadir}/nautilus-python/extensions/nautilus-thg.py
