@@ -1,6 +1,6 @@
 Name:		tortoisehg
-Version:	2.10
-Release:	%mkrel 1
+Version:	3.0.1
+Release:	1
 Summary:	Mercurial GUI command line tool hgtk
 Group:		Development/Other
 License:	GPLv2
@@ -12,9 +12,10 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 # This package _is_ noarch, but that isn't possible because the nautilus
 # subpackage has to be arch-specific:
 BuildArch:	noarch
+#Requires:	mercurial >= 3.0
 
 BuildRequires:  python-devel, gettext, python-sphinx, python-qt4-devel
-Requires:       python-iniparse, mercurial >= 2.8, gnome-python-gconf
+Requires:       python-iniparse, mercurial >= 2.9, gnome-python-gconf
 Requires:       pygtk2, gnome-python-gtkspell, python-qt4-qscintilla
 
 %description
@@ -77,3 +78,5 @@ rm doc/build/html/.buildinfo
 %files nautilus
 #{_libdir}/nautilus/extensions-2.0/python/nautilus-thg.py
 %{_datadir}/nautilus-python/extensions/nautilus-thg.py
+
+%changelog

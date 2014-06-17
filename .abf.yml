@@ -1,6 +1,9 @@
 removed_sources:
+  tortoisehg-2.10.tar.gz: a153afeb89cca088cf14258fc363d8c4f56d779c
+  tortoisehg-2.11.tar.gz: f1e717c73f43a05bdc7f2b2850d8c84ba136f07e
   tortoisehg-2.5.1.tar.gz: 1823b17e019dc13b3c8df3a7d66990fe91288f99
   tortoisehg-2.5.tar.gz: 4a7c101e84f1d200aa246f110ae86892e754a404
   tortoisehg-2.7.2.tar.gz: 6ed5ca29e848ded8c05f5efaa986b4b33f730189
+  tortoisehg-3.0.tar.gz: 2b7701488dbd4a58dd9c9ececcb19efe8976db59
 sources:
-  tortoisehg-2.10.tar.gz: a153afeb89cca088cf14258fc363d8c4f56d779c
+  tortoisehg-3.0.1.tar.gz: b051064f0a0a94ac900a9319dac4b8967dc2dcdb
