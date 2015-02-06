@@ -1,6 +1,6 @@
 Name:		tortoisehg
 Version:	3.0.1
-Release:	1
+Release:	2
 Summary:	Mercurial GUI command line tool hgtk
 Group:		Development/Other
 License:	GPLv2
