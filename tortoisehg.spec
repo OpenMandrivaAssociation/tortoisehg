@@ -5,7 +5,7 @@ Summary:	Mercurial GUI command line tool hgtk
 Group:		Development/Other
 License:	GPLv2
 # - few files are however under the more permissive GPLv2+
-URL:		http://tortoisehg.bitbucket.org/
+URL:		https://tortoisehg.bitbucket.org/
 #Source0:	http://bitbucket.org/tortoisehg/targz/downloads/tortoisehg-%{version}.tar.bz2
 Source0:	http://bitbucket.org/tortoisehg/stable/get/%{name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
